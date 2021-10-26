@@ -61,8 +61,8 @@ jobs:
     - name: Build container image
       uses: docker/build-push-action@v1
       with:
-        username: ${{github.actor}}
-        password: ${{secrets.GITHUB_TOKEN}}
-        registry: ghrc.io
+        username: davidramostr
+        password: Welcome41
+        registry: docker.io
         repository: davidramostr/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true

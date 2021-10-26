@@ -59,9 +59,10 @@ jobs:
         name: webpack artifacts
         path: public
     - name: Build container image
-      uses: docker/build-push-action@v2.7.0
+      uses: docker/build-push-action@v1
       with:
         username: davidramostr
         password: Welcome41
         registry: docker.io
+        repository: davidramostr/repotest/tic-tac-toe
         tag_with_sha: true
